@@ -1,0 +1,42 @@
+/* General styling for the popup */
+body {
+    margin: 0;
+    padding: 10px;
+    width: 100px; /* Set width */
+    height: 150px; /* Set height */
+    background-color: #1e1e1e; /* Dark mode background */
+    color: #e0e0e0; /* Light text color */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Heading styling */
+h2 {
+    color: rgb(217, 176, 255); /* Neon glow effect */
+    text-shadow: 0 0 0.5em rgb(217, 176, 255), 0 0 1em rgba(191, 123, 255, 0.781);
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+button {
+    --btn-color: rgb(100, 61, 136);
+    --glow-color: rgb(217, 176, 255);
+    background-color: var(--btn-color);
+    color: var(--glow-color);
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 0.5em var(--glow-color);
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: var(--glow-color);
+    color: var(--btn-color);
+}
